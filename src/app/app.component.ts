@@ -115,20 +115,49 @@ export class AppComponent {
       types.push({ type: TypeEnum.misc, weighting: totalWeighting, tasks: this.availableMiscTasks() });
     }
 
-    var categoryRoll = this.randBetween(0, totalWeighting);
+    console.group("🎲 Category Selection");
 
-    for (let item of types) {
+    console.group("Category weightings");
+    let prevRollRange = 0;
+
+    for (const cat of types) {
+      console.debug(
+        `${cat.type.padEnd(15)} : ${prevRollRange} → ${cat.weighting}`
+      );
+      prevRollRange = cat.weighting + 1;
+    }
+    console.groupEnd();
+
+    const categoryRoll = this.randBetween(0, totalWeighting);
+    console.debug(`Rolling category: 0 → ${totalWeighting}`);
+    console.debug(`Category roll = ${categoryRoll}`);
+
+    for (const item of types) {
       if (categoryRoll < item.weighting) {
-        var taskRoll = this.randBetween(0, item.tasks.length - 1);
+        console.group(`✅ Category hit: ${item.type}`);
+
+        console.group("Available tasks");
+        item.tasks.forEach((t, i) =>
+          console.debug(`${i.toString().padStart(2)} : ${t.task}`)
+        );
+        console.groupEnd();
+
+        const taskRoll = this.randBetween(0, item.tasks.length - 1);
+        console.debug(`Rolling task: 0 → ${item.tasks.length - 1}`);
+        console.debug(`Task roll = ${taskRoll}`);
+        console.debug(`🎯 Task hit = ${item.tasks[taskRoll].task}`);
 
         this.currentTask.set(item.tasks[taskRoll]);
 
-        setTimeout(() => {
-          this.isLoading.set(false);
-        }, 1000)
+        console.groupEnd();
+        console.groupEnd();
+
+        setTimeout(() => this.isLoading.set(false), 1000);
         return;
       }
     }
+
+    console.groupEnd();
 
     this.isLoading.set(false);
   }
