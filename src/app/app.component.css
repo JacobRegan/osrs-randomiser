@@ -1,0 +1,43 @@
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.spin-back {
+  animation: spinBack 1s linear infinite;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinBack {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.in-out {
+  animation: inOut 1s linear infinite;
+  display: flex;
+}
+
+@keyframes inOut {
+  from {
+    width: 100px;
+  }
+
+  to {
+    width: 700px;
+  }
+}
