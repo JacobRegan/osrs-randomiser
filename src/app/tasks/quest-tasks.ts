@@ -656,7 +656,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.shadow_of_the_storm,
-    requirements: [TaskEnum.demon_slayer, TaskEnum.crafting_level_30, TaskEnum.the_golem, TaskEnum.hitpoints_level_30],
+    requirements: [TaskEnum.demon_slayer, TaskEnum.crafting_level_30, TaskEnum.the_golem, TaskEnum.hitpoints_level_30, TaskEnum.prayer_level_44],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -761,7 +761,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.troll_stronghold,
-    requirements: [TaskEnum.death_plateau, TaskEnum.agility_level_15],
+    requirements: [TaskEnum.death_plateau, TaskEnum.agility_level_15, TaskEnum.prayer_level_44],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -886,7 +886,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.the_fremennik_isles,
-    requirements: [TaskEnum.the_fremennik_trials, TaskEnum.construction_level_20],
+    requirements: [TaskEnum.the_fremennik_trials, TaskEnum.construction_level_20, TaskEnum.prayer_level_44],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -900,7 +900,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.haunted_mine,
-    requirements: [TaskEnum.priest_in_peril, TaskEnum.crafting_level_35, TaskEnum.hitpoints_level_35],
+    requirements: [TaskEnum.priest_in_peril, TaskEnum.crafting_level_35, TaskEnum.hitpoints_level_35, TaskEnum.prayer_level_44],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
@@ -1032,7 +1032,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.underground_pass,
-    requirements: [TaskEnum.biohazard, TaskEnum.ranged_level_25],
+    requirements: [TaskEnum.biohazard, TaskEnum.ranged_level_25, TaskEnum.prayer_level_44],
     questPoints: 5,
     questPointRequirement: undefined
   } as Task,
