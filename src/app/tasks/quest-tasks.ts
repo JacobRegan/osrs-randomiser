@@ -1101,7 +1101,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.monkey_madness_i,
-    requirements: [TaskEnum.the_path_of_glouphrie, TaskEnum.the_grand_tree, TaskEnum.tree_gnome_village],
+    requirements: [TaskEnum.the_path_of_glouphrie, TaskEnum.the_grand_tree, TaskEnum.tree_gnome_village, TaskEnum.prayer_level_44],
     questPoints: 3,
     questPointRequirement: undefined
   } as Task,
