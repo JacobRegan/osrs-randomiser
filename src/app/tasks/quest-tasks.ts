@@ -831,7 +831,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.contact,
-    requirements: [TaskEnum.icthlarins_little_helper, TaskEnum.prince_ali_rescue],
+    requirements: [TaskEnum.icthlarins_little_helper, TaskEnum.prince_ali_rescue, TaskEnum.prayer_level_44, TaskEnum.hitpoints_level_40],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -1458,7 +1458,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.twilights_promise,
-    requirements: [TaskEnum.children_of_the_sun],
+    requirements: [TaskEnum.children_of_the_sun, TaskEnum.prayer_level_44],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
