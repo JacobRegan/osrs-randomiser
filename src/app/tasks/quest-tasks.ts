@@ -1511,7 +1511,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.meat_and_greet,
-    requirements: [TaskEnum.children_of_the_sun],
+    requirements: [TaskEnum.children_of_the_sun, TaskEnum.prayer_level_44],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
