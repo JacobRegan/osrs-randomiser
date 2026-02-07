@@ -194,7 +194,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.priest_in_peril,
-    requirements: [TaskEnum.hitpoints_level_20],
+    requirements: [TaskEnum.hitpoints_level_15],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
