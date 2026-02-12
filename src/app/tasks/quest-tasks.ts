@@ -54,7 +54,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.demon_slayer,
-    requirements: [TaskEnum.hitpoints_level_20],
+    requirements: [],
     questPoints: 3,
     questPointRequirement: undefined
   } as Task,
@@ -96,7 +96,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.ernest_the_chicken,
-    requirements: [TaskEnum.hitpoints_level_20],
+    requirements: [],
     questPoints: 4,
     questPointRequirement: undefined
   } as Task,
@@ -194,7 +194,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.priest_in_peril,
-    requirements: [TaskEnum.hitpoints_level_15],
+    requirements: [],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -348,7 +348,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.the_corsair_curse,
-    requirements: [TaskEnum.hitpoints_level_25],
+    requirements: [],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
@@ -418,7 +418,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.fairytale_i_growing_pains,
-    requirements: [TaskEnum.lost_city, TaskEnum.nature_spirit, TaskEnum.hitpoints_level_35],
+    requirements: [TaskEnum.lost_city, TaskEnum.nature_spirit],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
@@ -453,7 +453,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.the_fremennik_trials,
-    requirements: [TaskEnum.hitpoints_level_40],
+    requirements: [TaskEnum.hitpoints_level_20],
     questPoints: 3,
     questPointRequirement: undefined
   } as Task,
@@ -558,7 +558,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.lost_city,
-    requirements: [TaskEnum.crafting_level_35, TaskEnum.woodcutting_level_40, TaskEnum.hitpoints_level_30],
+    requirements: [TaskEnum.crafting_level_35, TaskEnum.woodcutting_level_40],
     questPoints: 3,
     questPointRequirement: undefined
   } as Task,
@@ -579,7 +579,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.merlins_crystal,
-    requirements: [TaskEnum.hitpoints_level_25],
+    requirements: [TaskEnum.hitpoints_level_15],
     questPoints: 6,
     questPointRequirement: undefined
   } as Task,
@@ -656,14 +656,14 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.shadow_of_the_storm,
-    requirements: [TaskEnum.demon_slayer, TaskEnum.crafting_level_30, TaskEnum.the_golem, TaskEnum.hitpoints_level_30, TaskEnum.prayer_level_44],
+    requirements: [TaskEnum.demon_slayer, TaskEnum.crafting_level_30, TaskEnum.the_golem, TaskEnum.hitpoints_level_25],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
   {
     type: TypeEnum.quest,
     task: TaskEnum.shilo_village,
-    requirements: [TaskEnum.jungle_potion, TaskEnum.crafting_level_20, TaskEnum.agility_level_35, TaskEnum.hitpoints_level_25],
+    requirements: [TaskEnum.jungle_potion, TaskEnum.crafting_level_20, TaskEnum.agility_level_35],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
@@ -677,7 +677,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.a_souls_bane,
-    requirements: [TaskEnum.hitpoints_level_30],
+    requirements: [TaskEnum.hitpoints_level_20],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -740,7 +740,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.tree_gnome_village,
-    requirements: [TaskEnum.hitpoints_level_35],
+    requirements: [],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
@@ -768,7 +768,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.vampyre_slayer,
-    requirements: [TaskEnum.hitpoints_level_15],
+    requirements: [],
     questPoints: 3,
     questPointRequirement: undefined
   } as Task,
@@ -803,14 +803,14 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.witchs_house,
-    requirements: [TaskEnum.hitpoints_level_20],
+    requirements: [],
     questPoints: 4,
     questPointRequirement: undefined
   } as Task,
   {
     type: TypeEnum.quest,
     task: TaskEnum.zogre_flesh_eaters,
-    requirements: [TaskEnum.big_chompy_bird_hunting, TaskEnum.jungle_potion, TaskEnum.smithing_level_5, TaskEnum.herblore_level_10, TaskEnum.ranged_level_30, TaskEnum.hitpoints_level_30],
+    requirements: [TaskEnum.big_chompy_bird_hunting, TaskEnum.jungle_potion, TaskEnum.smithing_level_5, TaskEnum.herblore_level_10, TaskEnum.ranged_level_30],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -831,7 +831,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.contact,
-    requirements: [TaskEnum.icthlarins_little_helper, TaskEnum.prince_ali_rescue, TaskEnum.prayer_level_44, TaskEnum.hitpoints_level_40],
+    requirements: [TaskEnum.icthlarins_little_helper, TaskEnum.prince_ali_rescue],
     questPoints: 1,
     questPointRequirement: undefined
   } as Task,
@@ -858,7 +858,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.dragon_slayer_i,
-    requirements: [TaskEnum.hitpoints_level_30],
+    requirements: [TaskEnum.hitpoints_level_25],
     questPoints: 2,
     questPointRequirement: 32
   } as Task,
@@ -900,7 +900,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.haunted_mine,
-    requirements: [TaskEnum.priest_in_peril, TaskEnum.crafting_level_35, TaskEnum.hitpoints_level_35, TaskEnum.prayer_level_44],
+    requirements: [TaskEnum.priest_in_peril, TaskEnum.crafting_level_35],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
@@ -1122,7 +1122,7 @@ export const questTasks: Task[] = [
   {
     type: TypeEnum.quest,
     task: TaskEnum.a_night_at_the_theatre,
-    requirements: [TaskEnum.a_taste_of_hope, TaskEnum.hitpoints_level_75],
+    requirements: [TaskEnum.a_taste_of_hope, TaskEnum.hitpoints_level_72],
     questPoints: 2,
     questPointRequirement: undefined
   } as Task,
